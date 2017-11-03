@@ -4,7 +4,7 @@ import App from './App';
 import changeCount from './reducers/changeCount';
 import createStore from './createStore';
 
-const store = createStore(changeCount);
+ const store = createStore(changeCount);
 
 export function render() {
   ReactDOM.render(
@@ -14,5 +14,5 @@ export function render() {
 };
 
 store.dispatch({ type: '@@INIT' });
-
-// remove render() here
+ 
+render();
